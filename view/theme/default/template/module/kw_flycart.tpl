@@ -1,4 +1,4 @@
-<div id="fly_cart" class="<?php if($pselect == 'none') { ?>standart<?php } ?>">
+<!-- <div id="fly_cart" class="<?php if($pselect == 'none') { ?>standart<?php } ?>">
 	<?php if($type == 'module') { ?>
 	<div class="box" id="flymod">
 		<div class="box-heading"><span class="title_mod"><?php echo $heading_title; ?></span>
@@ -287,4 +287,4 @@ _:-o-prefocus, #fly_element  > span{line-height:<?php echo $tsize - 1; ?>px;}
 .remove a{background:url(catalog/view/javascript/kw_flycart/img/remove.png) no-repeat 0 0;display:block;width:6px;height:6px;margin-top:4px;}
 </style>
 <script type="text/javascript">var co = this.co = $.fn.colorbox; var cv; $.fn.colorbox = function(v) { cv = v; return; }; $(document).ready(function() { $.fn.colorbox = co; $('.colorbox').colorbox(cv) });</script>
-<![endif]--> 
+<![endif]-->

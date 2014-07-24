@@ -1,4 +1,4 @@
-<div class="box2">
+<!-- <div class="box2">
 <div class="new"></div>
   <div class="box-heading"><?php echo $heading_title; ?></div>
   <div class="box-content">
@@ -31,4 +31,4 @@
 </div>
     </div>
   </div>
-</div>
+</div> -->

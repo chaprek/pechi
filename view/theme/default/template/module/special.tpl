@@ -1,35 +1,39 @@
-<div class="box2">
-<div class="sale"></div>
-  <div class="box-heading"><?php echo $heading_title; ?></div>
-  <div class="box-content">
-    <div class="box-product">
-<div class="d-carousel">
-<ul class="carousel">
-      <?php foreach ($products as $product) { ?>
-<li>
-      <div>
-        <?php if ($product['thumb']) { ?>
-        <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" /></a></div>
-        <?php } ?>
-        <div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
-        <?php if ($product['price']) { ?>
-        <div class="price">
-          <?php if (!$product['special']) { ?>
-          <?php echo $product['price']; ?>
-          <?php } else { ?>
-          <span class="price-old"><?php echo $product['price']; ?></span> <span class="price-new"><?php echo $product['special']; ?></span>
-          <?php } ?>
-        </div>
-        <?php } ?>
-        <?php if ($product['rating']) { ?>
-        <div class="rating"><img src="catalog/view/theme/default/image/stars-<?php echo $product['rating']; ?>.png" alt="<?php echo $product['reviews']; ?>" /></div>
-        <?php } ?>
-<!--    <div class="cart"><input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" /></div> -->
-      </div>
-</li>
-      <?php } ?>
-</ul>
-</div>
-    </div>
-  </div>
-</div>
+<!-- action -->
+					<div class="action">
+						<div class="holder clearfix">
+							<div class="left"><?php echo $heading_title; ?></div>
+							<div class="right">
+								<div class="current">1</div>
+								<div class="slash">/</div>
+								<div class="number-slides"></div>
+							</div>
+						</div>
+						<div class="slider">
+							<ul>
+								<?php foreach ($products as $product) { ?>
+									<li>
+										<div class="holder-item">
+											<div class="item">
+												<?php if ($product['thumb']) { ?>
+													<a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" /></a>
+												<?php } ?>
+											</div>
+											<div class="description">
+												<div class="inner">
+													<span><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></span>
+													<strong>
+														<?php if (!$product['special']) { ?>
+															<?php echo $product['price']; ?>
+														<?php } else { ?>
+															<?php echo $product['special']; ?>
+														<?php } ?>
+													</strong>
+												</div>
+												<button onclick="addToCart('<?php echo $product['product_id']; ?>');">В корзину</button>
+											</div>
+										</div>
+									</li>
+								<?php } ?>
+							</ul>
+						</div>
+					</div>
