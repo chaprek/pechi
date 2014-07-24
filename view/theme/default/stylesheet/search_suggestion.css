@@ -1,0 +1,63 @@
+	.ui-autocomplete {
+	  z-index: 99999 !important;
+	}
+	.ui-menu-item{
+		text-align:left;
+		overflow: hidden;
+		z-index: 99999;
+	}
+  .ui-menu-item a {
+		overflow: hidden;
+		z-index: 99999;
+	}
+.ui-autocomplete .product-list	.image {
+    float: left;
+    margin-right: 5px;	
+    margin-bottom: 0;
+	z-index: 99999;
+	}
+.ui-autocomplete .product-list	.image img {
+    height: 40px;
+    border: 1px solid #E7E7E7;
+    padding: 0;
+	z-index: 99999;
+	}
+.ui-autocomplete .product-list	.name {
+    color: #38B0E3;
+    font-weight: bold;
+    text-decoration: none;
+    height: 15px;
+    overflow: hidden;    
+    margin: 0;
+    padding: 0;
+    border: 0;
+	z-index: 99999;
+    display: inline;
+    position: relative;
+    top: 12px;
+}
+.ui-autocomplete .product-list	.price {
+    height: 20px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: center;
+	z-index: 99999;
+    top: inherit;
+  
+    margin-top: 10px;
+    margin-right: 30px;
+}
+.ui-autocomplete .product-list	.price-old {
+    margin-right: 2px;
+	z-index: 99999;
+  } 
+.ui-autocomplete .product-list	.description,
+.ui-autocomplete .product-list	.attributes {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    clear: both;
+	z-index: 99999;
+  }    
